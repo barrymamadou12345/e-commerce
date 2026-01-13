@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop - Qui Sommes-Nous</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #6366f1;
+      --color-primary-light: #818cf8;
+      --color-primary-dark: #4f46e5;
+      --color-secondary: #f59e0b;
+      --color-accent: #10b981;
+      --color-danger: #ef4444;
+      --color-dark: #1f2937;
+      --color-light: #f3f4f6;
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.15);
+      --radius-card: 12px;
+      --radius-button: 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-light min-h-screen flex flex-col">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-dark text-white p-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <a href="index.html" class="text-2xl font-bold text-primary">E-Shop</a>
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <a href="index.html" class="hover:text-primary transition-colors">Accueil</a>
+        <a href="hommes.html" class="hover:text-primary transition-colors">Hommes</a>
+        <a href="femmes.html" class="hover:text-primary transition-colors">Femmes</a>
+        <a href="accessoires.html" class="hover:text-primary transition-colors">Accessoires</a>
+        <a href="about.html" class="text-primary font-semibold">Qui Sommes-Nous</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="favoris.html" class="text-2xl hover:scale-110 transition-transform">❤️</a>
+        <div class="flex items-center gap-2 bg-primary px-4 py-2 rounded-button">🛒 Panier (0)</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-primary to-purple-600 text-white py-16 px-4 text-center">
+    <h1 class="text-4xl font-bold">Qui Sommes-Nous</h1>
+    <p class="mt-2 opacity-90">Découvrez l'histoire de E-Shop</p>
+  </header>
+
+  <!-- SECTION 1 : NOTRE HISTOIRE - DEV 1 -->
+  <section class="py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+
+        <div class="flex-1">
+          <img src="../images/horizon.png" alt="Notre équipe" class="rounded-card shadow-hover w-full">
+        </div>
+
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-6 text-dark">Notre Histoire</h2>
+          <p class="text-gray-600 mb-4">
+            Fondée en 2020, E-Shop est née d'une passion pour la mode accessible et de qualité.
+            Notre mission est de proposer des vêtements tendance à des prix justes.
+          </p>
+          <p class="text-gray-600 mb-4">
+            Nous sélectionnons soigneusement chaque pièce de notre collection pour vous offrir
+            le meilleur rapport qualité-prix.
+          </p>
+          <p class="text-gray-600">
+            Aujourd'hui, nous sommes fiers de servir plus de 50 000 clients satisfaits à travers la France.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 : NOS VALEURS - DEV 2 -->
+  <section class="py-12 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-dark text-center">Nos Valeurs</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-8">
+
+        <div class="flex-1 bg-light rounded-card shadow-card p-8 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">🌿</div>
+          <h3 class="text-xl font-bold text-dark mb-3">Éco-responsable</h3>
+          <p class="text-gray-600">Nous privilégions les matières durables et les fournisseurs éthiques.</p>
+        </div>
+
+        <div class="flex-1 bg-light rounded-card shadow-card p-8 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">💎</div>
+          <h3 class="text-xl font-bold text-dark mb-3">Qualité</h3>
+          <p class="text-gray-600">Chaque produit est contrôlé pour garantir une qualité irréprochable.</p>
+        </div>
+
+        <div class="flex-1 bg-light rounded-card shadow-card p-8 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold text-dark mb-3">Service Client</h3>
+          <p class="text-gray-600">Une équipe dédiée pour répondre à toutes vos questions.</p>
+        </div>
+
+        <div class="flex-1 bg-light rounded-card shadow-card p-8 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">🚚</div>
+          <h3 class="text-xl font-bold text-dark mb-3">Livraison Rapide</h3>
+          <p class="text-gray-600">Expédition sous 24h et livraison gratuite dès 50€.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-8 px-4 mt-auto">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2026 E-Shop - Projet Atelier Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

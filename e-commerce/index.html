@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop - Accueil</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #6366f1;
+      --color-primary-light: #818cf8;
+      --color-primary-dark: #4f46e5;
+      --color-secondary: #f59e0b;
+      --color-accent: #10b981;
+      --color-danger: #ef4444;
+      --color-dark: #1f2937;
+      --color-light: #f3f4f6;
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.15);
+      --shadow-button: 0 4px 15px rgba(99, 102, 241, 0.4);
+      --radius-card: 12px;
+      --radius-button: 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-light min-h-screen">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-dark text-white p-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <a href="index.html" class="text-2xl font-bold text-primary">E-Shop</a>
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <a href="index.html" class="text-primary font-semibold">Accueil</a>
+        <a href="hommes.html" class="hover:text-primary transition-colors">Hommes</a>
+        <a href="femmes.html" class="hover:text-primary transition-colors">Femmes</a>
+        <a href="accessoires.html" class="hover:text-primary transition-colors">Accessoires</a>
+        <a href="about.html" class="hover:text-primary transition-colors">Qui Sommes-Nous</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="favoris.html" class="text-2xl hover:scale-110 transition-transform">❤️</a>
+        <div class="flex items-center gap-2 bg-primary px-4 py-2 rounded-button">🛒 Panier (0)</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1 : HERO - À compléter par DEV 1 -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-r from-primary to-primary-dark text-white py-20 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenue sur E-Shop</h1>
+        <p class="text-xl mb-8 opacity-90">Découvrez notre collection exclusive</p>
+        <a href="hommes.html"
+          class="inline-block bg-white text-primary px-8 py-4 rounded-button font-semibold hover:bg-light transition-colors">
+          Voir les produits
+        </a>
+      </div>
+      <div class="flex-1">
+        <img src="../images/horizon.png" alt="Hero" class="rounded-card shadow-hover w-full max-w-md mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2 : CATÉGORIES - À compléter par DEV 2 -->
+  <!-- ============================================ -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Nos Catégories</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-8">
+
+        <a href="hommes.html"
+          class="flex-1 max-w-sm bg-white rounded-card shadow-card p-6 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">👔</div>
+          <h3 class="text-xl font-bold text-dark">Hommes</h3>
+          <p class="text-gray-600 mt-2">Collection masculine</p>
+        </a>
+
+        <a href="femmes.html"
+          class="flex-1 max-w-sm bg-white rounded-card shadow-card p-6 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">👗</div>
+          <h3 class="text-xl font-bold text-dark">Femmes</h3>
+          <p class="text-gray-600 mt-2">Collection féminine</p>
+        </a>
+
+        <a href="accessoires.html"
+          class="flex-1 max-w-sm bg-white rounded-card shadow-card p-6 text-center hover:shadow-hover transition-shadow">
+          <div class="text-5xl mb-4">👜</div>
+          <h3 class="text-xl font-bold text-dark">Accessoires</h3>
+          <p class="text-gray-600 mt-2">Sacs, montres, bijoux</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-8 px-4 mt-auto">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2026 E-Shop - Projet Atelier Tailwind CSS</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
